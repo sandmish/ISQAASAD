@@ -7,6 +7,7 @@
    <body>
    {% if user.is_authenticated %}
        <div class="page-container">
+
            <h2 class="top-menu">Hello {{ user.username }},</h2>
            <p>Please choose from below options.</p>
 
@@ -22,19 +23,44 @@
                            <div class="thumbnail">
                                <img src="{% static "images/customer.jpg" %}" alt="customer"/>
                                <div class="caption">
-                                   <h2>Customer</h2>
-                                   <p>We see our success in our customers success </p>
-                                   <p><a class="btn btn-primary" href="{% url 'crm:customer_list' %}"                                          role="button">View                                        details &raquo;</a></p>                                </div>                            </div>                        </div>                        <div class="col-md-3">                            <div class="thumbnail">                                <img src="{% static "images/cupcakes.jpeg" %}" alt="cupcakes"/>                                <div class="caption">                                    <h2>Services</h2>                                    <p>Great Services</p>                                    <p><a class="btn btn-primary" href="{% url 'crm:customer_list' %}"                                          role="button">View                                        details &raquo;</a></p>                                </div>                            </div>                        </div>                        <div class="col-md-3">                            <div class="thumbnail">                                <img src="{% static "images/lunch.jpeg" %}" alt="lunch"/>                                <div class="caption">                                    <h2>Products</h2>                                    <p>Great Products.</p>                                    <p><a class="btn btn-primary" href="{% url 'crm:customer_list' %}"
-                                       role="button">View
-                                      details &raquo;</a></p>
-                               </div>
-                            </div>
+                                   <h2>PC Repair</h2>
+                                   <p>We Repair all model and makes of PC </p>
+                                   <p><a class="btn btn-primary" href="{% url 'crm:customer_list' %}"
+                                         role="button">View
+                                       details &raquo;</a></p>
+                                   </div>
+                           </div>
                        </div>
-                   </div>
+                       <div class="col-md-3">
+                           <div class="thumbnail">
+                               <img src="{% static "images/cupcakes.jpeg" %}" alt="cupcakes"/>
+                               <div class="caption">
+                                   <h2>Mobile Repair</h2>
+                                   <p>all sort of Mobile repair</p>
+                                   <p><a class="btn btn-primary" href="{% url 'crm:customer_list' %}"
+                                        role="button">View
+                                       details &raquo;</a></p>
+                               </div>
+                           </div>
+                       </div>
+                       <div class="col-md-3">
+                           <div class="thumbnail">
+                               <img src="{% static "images/lunch.jpeg" %}" alt="lunch"/>
+                               <div class="caption">
+                                   <h2>Data Recovery</h2>
+                                   <p>Data Recovery service</p>
+                                   <p><a class="btn btn-primary" href="{% url 'crm:customer_list' %}"
+                                         role="button">View
+                                       details &raquo;</a></p>
+                               </div>
+                           </div>
+                       </div>
+                    </div>
                </div>
            </div>
        </div>
    </div>
    </body>
+
 {% endblock %}
-</html>
+ </html>
